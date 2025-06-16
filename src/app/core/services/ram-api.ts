@@ -12,8 +12,8 @@ export class RamApi {
 
 
     //Obtener todos los personajes de la API
-    getAllCharacters(): Observable<any> {
-        return this.http.get(`${this.baseUrl}/character`);
+    getAllCharacters(page: number = 1): Observable<any> {
+        return this.http.get(`${this.baseUrl}/character?page= ${page}`);
     }
 
     //Obtener un personaje especifico por ID

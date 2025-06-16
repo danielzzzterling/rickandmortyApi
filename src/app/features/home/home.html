@@ -1,3 +1,12 @@
 
-<app-cards></app-cards>
+
 <app-header></app-header>
+    <div class="bg-black row ">
+
+        <div class=" col-md-2 " *ngFor="let character of characters">
+            
+
+                <app-cards [character]="character" > </app-cards>
+            </div>
+        </div>
+    
